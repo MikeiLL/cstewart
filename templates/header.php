@@ -11,7 +11,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    	<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">Po Man Pickins</a>
+    	<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">Stewart Farms</a>
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <?php

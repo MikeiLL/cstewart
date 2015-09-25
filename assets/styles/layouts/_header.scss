@@ -1,6 +1,31 @@
 @charset "UTF-8";
 
-.navbar-brand, .tagline{
+
+
+
+.navbar-brand {
+    background-image: url("../images/stewartfarmslogo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 150px;
+    background-size: 150px 90px;
+    float: left;
+    line-height: 25px;
+    padding: 57.5px 15px;
+    margin-left: 1.6rem;
+    margin-top: 1rem;
+}
+
+.navbar-brand, .text-hide {
+    background-color: transparent;
+    border: 0 none;
+    color: transparent;
+    font: 0px/0 a;
+    text-shadow: none;
+}
+
+.tagline{
 	color: $brand-primary;	
 	text-align: center;
 	font-size: 1.6rem;
@@ -238,68 +263,46 @@
   }
 }
 
-.navbar-brand {
-  float: right;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
-  line-height: 3rem;
-  height: 6rem;
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
-
-  > img {
-    display: block;
-  }
-
-  @media (min-width: $grid-float-breakpoint) {
-    .navbar > .container &,
-    .navbar > .container-fluid & {
-      margin-left: -$navbar-padding-horizontal;
-    }
-  }
-}
-
 .invitation {
     background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
     border-radius: 4px;
-    margin-top: 11rem;
+    margin-top: 1rem;
     padding: 2rem;
     width: 18rem;
-}
+	}
 
 .banner {
 	min-height: 8em;
-	background: $brand-primary url("../images/McCormick_Twine_Binder_1884.gif") repeat scroll center center / 1280px 600px;
-}
+	background: $brand-success;
+	}
 
 .hero {
-	background: url('../images/McCormick_Twine_Binder_1884.gif');
+	background: $brand-primary url('../images/Farm.png');
 	background-repeat: none;
-	background-size: 1280px 600px;
-	height: 400px;
+	background-size: 380px 300px;
+	height: 300px;
 	background-position: center center;
 	position: relative; 
-}
+	}
 
 
 @media screen and (min-width: 768px) {
 	.hero {
 		height: 600px;
 		background-position: center center;
-		background-size: 1792px 840px;
+		background-size: 980px 600px;
 		}
 		
 	.banner {
-		background-size: 1792px 840px;
+		background-size: 800px 200px;
 	}
+	
 	.tagline {
 		font-size: 3rem;
 	}
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: $container-desktop) {
 
 	.banner {
 		-webkit-box-shadow: 0px 0px 8px 2px #333;
@@ -309,30 +312,31 @@
 	
 	.hero {
 	height: 600px;
-	background-position: center top;
-}
+	background-position: center center;
+	background-size: 1400px 600px;
+	}
 	
 	.invitation {
 		padding: 2rem;
 		border-radius: 4px;
 		margin-top: 11rem;
 	}
-	
-	.hero {
-		height: 600px;
-		background-position: center center;
-		background-size: 1692px 840px;
-		}
 }
-@media screen and (min-width: 60em) {
+@media screen and (min-width: $container-large-desktop) {
+
 	.tagline {
 		font-size: 6rem;
 		margin-left: -45rem;
 	}
+	
 	.navbar-brand {
-		font-size: 6rem;
-		margin-left: -45rem;
-		line-height: 6rem;
-		height:16rem;
+		height:18rem;
+    width: 250px;
+    background-size: 250px 118px;
+	}
+		.hero {
+	height: 600px;
+	background-position: center center;
+	background-size: 1780 600px;
 	}
 }
