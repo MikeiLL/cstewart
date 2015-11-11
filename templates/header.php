@@ -22,7 +22,7 @@
     </nav>
       <?php if(is_front_page()) : ?>
 			<div class="center-block invitation">
-				<a class="btn btn-primary btn-lg outline" type="button" href="reach-the-farm">Contact Us</a>
+				<a class="btn btn-primary btn-lg outline" href="<?=get_site_url();?>/reach-the-farm">Contact Us</a>
 			</div>
 		</div>
 		<div class="center-block tagline"><?php echo get_bloginfo ( 'description' ); ?></div>
