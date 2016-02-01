@@ -20,17 +20,31 @@
 	overflow: auto;
 }
 
+// Gallery shortcode
+.gallery-columns-3 {
+  @include make-row();
+}
+.gallery-columns-3 .gallery-item {
+  @include make-md-column(4);
+}
+.gallery-item .landscape {
+  @extend .thumbnail;
+}
+.gallery-caption {
+  display: none;
+}
+
 /* The following adapted from JSFiddle for matching height responsive fluid divs */
 @media (min-width: 768px) {
 
 	/* top row */
-	.col .well{ 
+	.col .well{
 			margin-bottom: -99999px;
-			padding-bottom: 100030px;  
+			padding-bottom: 100030px;
 	}
 
 	/* bottom row */
-	.col-base{ 
+	.col-base{
 			margin-top: -15px; /* cut off top portion of bottom wells */
 	}
 }
@@ -42,7 +56,7 @@
 }
 
 .col-wrap{
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .well {
