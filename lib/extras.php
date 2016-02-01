@@ -139,3 +139,17 @@ function save_featured_meta($post_id){
         }
 add_action('save_post', __NAMESPACE__ . '\\save_featured_meta');
 // EOF Featured Article
+
+//*
+/* As recommended in Roots Discourse, this function is called
+ * within div wrap so we can eliminate the container and have
+ * full width rows and divs.
+*/
+function container_class() {
+  if ( is_front_page() || 'movies' == get_post_type() ) {
+    return 'container-fluid';
+  } else {
+    return 'container';
+  }
+}
+//*
