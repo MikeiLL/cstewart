@@ -28,7 +28,7 @@
   @include make-md-column(4);
 }
 .gallery-item .landscape {
-  @extend .thumbnail;
+  //@extend .thumbnail;
 }
 .gallery-caption {
   display: none;
