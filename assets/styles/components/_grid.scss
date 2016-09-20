@@ -29,7 +29,7 @@
   @include make-row();
 }
 .gallery-columns-3 .gallery-item {
-  @include make-md-column(4);
+  @include make-xs-column(4);
 }
 .gallery-item .landscape {
   @extend .thumbnail;
